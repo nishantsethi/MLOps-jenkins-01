@@ -12,13 +12,14 @@ fi
 
 LASTSCORE=`cat $LASTRECORD`
 
-if [ ! $SCORE -ge $LASTRECORD ] ; then
-    echo "New Accuracy($SCORE) is lower than Previous accuracy($LASTRECORD)"
+if [ ! $SCORE -ge $LASTSCORE ] ; then
+    echo "New Accuracy($SCORE) is lower than Previous accuracy($LASTSCORE)"
     echo "Test 1 Failed as Accuracy is not above the Last recorded accuracy"
     echo "Exiting Script"
     exit 42
 else
-    echo "New Accuracy($SCORE) is greater or equal to the Previous accuracy($LASTRECORD)"
+    echo SCORE > "$LASTRECORD"
+    echo "New Accuracy($SCORE) is greater or equal to the Previous accuracy($LASTSCORE)"
     echo "Test 1 Passed"
 fi
 
