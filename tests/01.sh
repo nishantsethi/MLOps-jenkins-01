@@ -20,6 +20,7 @@ if [ ! $SCORE -ge $LASTRECORD ] ; then
 else
     echo "New Accuracy($SCORE) is greater or equal to the Previous accuracy($LASTRECORD)"
     echo "Test 1 Passed"
+fi
 
 echo "All Tests Passed"
 echo "Script Termed OK"
