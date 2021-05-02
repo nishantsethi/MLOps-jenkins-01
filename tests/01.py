@@ -16,7 +16,7 @@ SCORE=open(ACCURACYFILE, 'r').read()
 LASTSCORE = 0
 
 
-if LASTSCORE > SCORE:
+if int(LASTSCORE) > int(SCORE):
     print("New Accuracy(",SCORE,") is lower than Previous accuracy(",LASTSCORE,")")
     print("Test 1 Failed as Accuracy is not above the Last recorded accuracy")
     sys.exit('Exiting Script')
