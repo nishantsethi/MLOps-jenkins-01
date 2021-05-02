@@ -10,13 +10,13 @@ SCORE=open(ACCURACYFILE, 'r').read()
 # if not os.path.exists(LASTRECORD):
 #     LASTSCORE = 0
 # else:
-#     LASTSCORE = int(open(LASTRECORD, 'r').read())
+#     LASTSCORE = float(open(LASTRECORD, 'r').read())
 
 
 LASTSCORE = 0
 
 
-if int(LASTSCORE) > int(SCORE):
+if float(LASTSCORE) > float(SCORE):
     print("New Accuracy(",SCORE,") is lower than Previous accuracy(",LASTSCORE,")")
     print("Test 1 Failed as Accuracy is not above the Last recorded accuracy")
     sys.exit('Exiting Script')
