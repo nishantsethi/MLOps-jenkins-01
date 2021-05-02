@@ -2,7 +2,7 @@ import os.path
 
 LASTRECORD="$WORKSPACE/tests/last_result.txt"
 ACCURACYFILE="$WORKSPACE/script/accuracy.txt"
-SCORE=open(ACCURACYFILE+'.txt', 'r').read()
+SCORE=open(ACCURACYFILE, 'r').read()
 
 
 if not os.path.exists(LASTRECORD):
