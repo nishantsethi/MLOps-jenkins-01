@@ -1,7 +1,8 @@
-import os.path
+import os
 
-LASTRECORD="$WORKSPACE/tests/last_result.txt"
-ACCURACYFILE="$WORKSPACE/script/accuracy.txt"
+WORKSPACE = os.environ['WORKSPACE']
+LASTRECORD=WORKSPACE+"/tests/last_result.txt"
+ACCURACYFILE=WORKSPACE+"/script/accuracy.txt"
 SCORE=open(ACCURACYFILE, 'r').read()
 
 
