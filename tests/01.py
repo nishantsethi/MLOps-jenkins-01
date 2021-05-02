@@ -9,7 +9,7 @@ SCORE=open(ACCURACYFILE, 'r').read()
 if not os.path.exists(LASTRECORD):
     LASTSCORE = 0
 else:
-    LASTSCORE = open(LASTRECORD+'.txt', 'r').read()
+    LASTSCORE = open(LASTRECORD, 'r').read()
 
 
 
