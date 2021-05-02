@@ -25,7 +25,7 @@ else:
     text_file.write(SCORE)
     text_file.close()
     print("New Accuracy($SCORE) is greater or equal to the Previous accuracy(",LASTSCORE,")")
-    eprint("Test 1 Passed")
+    print("Test 1 Passed")
 
 print("All Tests Passed")
 print("Script Termed OK")
