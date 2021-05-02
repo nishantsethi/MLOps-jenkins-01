@@ -1,4 +1,5 @@
 import os
+import sys
 
 WORKSPACE = os.environ['WORKSPACE']
 LASTRECORD=WORKSPACE+"/tests/last_result.txt"
