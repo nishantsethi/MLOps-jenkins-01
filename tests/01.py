@@ -7,13 +7,12 @@ ACCURACYFILE=WORKSPACE+"/script/accuracy.txt"
 SCORE=open(ACCURACYFILE, 'r').read()
 
 
-# if not os.path.exists(LASTRECORD):
-#     LASTSCORE = 0
-# else:
-#     LASTSCORE = float(open(LASTRECORD, 'r').read())
+if not os.path.exists(LASTRECORD):
+    LASTSCORE = 0
+else:
+    LASTSCORE = float(open(LASTRECORD, 'r').read())
 
 
-LASTSCORE = 0
 
 
 if float(LASTSCORE) > float(SCORE):
