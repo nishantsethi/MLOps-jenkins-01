@@ -23,7 +23,7 @@ elif float(LASTSCORE) == float(SCORE):
     print("New Accuracy($SCORE) is EQUAL to the Previous accuracy(",LASTSCORE,")")
     print("Test 1 Passed")
 else:
-    print("New Accuracy($SCORE) is GREATER than the Previous accuracy(",LASTSCORE,")")
+    print("New Accuracy(",SCORE,") is GREATER than the Previous accuracy(",LASTSCORE,")")
     print("Test 1 Passed")
 
 text_file = open(LASTRECORD, "w")
